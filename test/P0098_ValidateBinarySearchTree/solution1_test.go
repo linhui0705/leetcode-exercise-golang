@@ -1,12 +1,10 @@
 package P0098_ValidateBinarySearchTree
 
-import "leetcode-exercise-golang/structure"
-
-func isValidBST(root *structure.TreeNode) bool {
+func isValidBST(root *TreeNode) bool {
 	return traverse(root, nil, nil)
 }
 
-func traverse(node *structure.TreeNode, min *structure.TreeNode, max *structure.TreeNode) bool {
+func traverse(node *TreeNode, min *TreeNode, max *TreeNode) bool {
 	if nil == node {
 		return true
 	}
