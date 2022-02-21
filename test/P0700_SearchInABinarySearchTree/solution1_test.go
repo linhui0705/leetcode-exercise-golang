@@ -1,8 +1,6 @@
 package P0700_SearchInABinarySearchTree
 
-import "leetcode-exercise-golang/structure"
-
-func searchBST(root *structure.TreeNode, val int) *structure.TreeNode {
+func searchBST(root *TreeNode, val int) *TreeNode {
 	if nil == root {
 		return nil
 	}
